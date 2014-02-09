@@ -24,7 +24,5 @@ def cantor(lst):
 		if(n - i - 1 < m):
 			num += fac[n - i - 1] * tmp
 		else:
-			num += factorial(n - i) * tmp
+			num += factorial(n - i - 1) * tmp
 	return num + 1
-
-print cantor([1, 3, 2, 4])
